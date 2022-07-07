@@ -55,6 +55,7 @@ def createUploading(filename, totalBits, currentBits, speed, time, originalname=
     if originalname != '':
         msg = str(msg).replace(filename, originalname)
         msg += '📦 Archivo : ' + '\n' + str(filename) + '\n'
+    msg += '|' + '\n'
     msg += '├🚥 Subido: ' + str(sizeof_fmt(currentBits)) + '|' + '📦 Total: ' + str(sizeof_fmt(totalBits)) + '\n'
     msg += '├🚀 Velocidad: ' + str(sizeof_fmt(speed)) + '/s\n'
     msg += '|' + '\n'
